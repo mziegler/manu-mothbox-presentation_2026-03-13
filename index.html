@@ -9,6 +9,52 @@
 
 		<title>Manu Mothbox Project Slides</title>
 
+
+		<style type="text/css">
+			/* Make the title slide fill its slide area cleanly */
+			#title-slide {
+			position: relative;
+			overflow: hidden;
+			color: white;
+			}
+
+			/* Full-slide image stack */
+			#title-slide .title-carousel {
+			position: absolute;
+			inset: 0;
+			z-index: 0;
+			}
+
+			#title-slide .title-carousel img {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+			}
+
+			#title-slide .title-carousel img.active {
+			opacity: 1;
+			}
+
+			/* Optional dark overlay for text readability */
+			#title-slide .title-overlay {
+			position: absolute;
+			inset: 0;
+			z-index: 1;
+			background: rgba(0, 0, 0, 0.0);
+			}
+
+			/* Put title text above the images */
+			#title-slide .title-content {
+			position: relative;
+			z-index: 2;
+			}
+		</style>
+
 		<link rel="stylesheet" href="dist/reset.css" />
 		<link rel="stylesheet" href="dist/reveal.css" />
 		<link rel="stylesheet" href="dist/theme/night.css" />
@@ -19,11 +65,48 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+						
+				<section id="title-slide">
+					<div class="title-carousel">
+						<img src="img/example bugs/fluidRobin_2026_03_06__01_18_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="active" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__18_14_06_HDR0_2_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__19_01_21_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__19_34_21_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_02_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_15_06_HDR0_10_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_26_06_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_43_05_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__20_34_24_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__20_35_07_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__20_44_08_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_02_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_06_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_08_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_20_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_36_09_HDR0_11_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_37_07_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_40_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__22_21_10_HDR0_3_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__22_41_06_HDR0_2_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__22_43_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_08__04_12_25_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+
+					</div>
+
+					<div class="title-overlay"></div>
+
+					<div class="title-content">
+						<h1>&nbsp;</h1>
+						<p>&nbsp;</p>
+						<br><br><br><br><br><br><br><br><br><br>
+					</div>
+				</section>
+
 				<section>
 				  <h3>Manu Mothbox Project</h3>
 				  <img class="stretch" src="img/mothbox-dark.jpg" alt="Manu Mothbox">
 				</section>
-				
+
 				<section>
 				  <h2>This Presentation</h2>
 				  <ol>
@@ -309,6 +392,33 @@
 		<script src="dist/plugin/markdown.js"></script>
 		<script src="dist/plugin/highlight.js"></script>
 		<script>
+
+			let titleCarouselInterval = null;
+
+			function startTitleCarousel() {
+				const slide = document.querySelector('#title-slide');
+				if (!slide) return;
+
+				const images = slide.querySelectorAll('.title-carousel img');
+				if (images.length <= 1) return;
+				if (titleCarouselInterval) return;
+
+				let current = 0;
+
+				titleCarouselInterval = setInterval(() => {
+				images[current].classList.remove('active');
+				current = (current + 1) % images.length;
+				images[current].classList.add('active');
+				}, 5000);
+			}
+
+			function stopTitleCarousel() {
+				if (titleCarouselInterval) {
+				clearInterval(titleCarouselInterval);
+				titleCarouselInterval = null;
+				}
+			}
+
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
@@ -317,6 +427,21 @@
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			}).then(() => {
+				const titleSlide = document.querySelector('#title-slide');
+
+				function syncCarouselWithCurrentSlide() {
+				const currentSlide = Reveal.getCurrentSlide();
+
+				if (currentSlide === titleSlide) {
+					startTitleCarousel();
+				} else {
+					stopTitleCarousel();
+				}
+				}
+
+				syncCarouselWithCurrentSlide();
+				Reveal.on('slidechanged', syncCarouselWithCurrentSlide);
 			});
 		</script>
 	</body>
