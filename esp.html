@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>Manu Mothbox Project Slides</title>
+
+
+		<style type="text/css">
+			/* Make the title slide fill its slide area cleanly */
+			#title-slide {
+			position: relative;
+			overflow: hidden;
+			color: white;
+			}
+
+			/* Full-slide image stack */
+			#title-slide .title-carousel {
+			position: absolute;
+			inset: 0;
+			z-index: 0;
+			}
+
+			#title-slide .title-carousel img {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+			}
+
+			#title-slide .title-carousel img.active {
+			opacity: 1;
+			}
+
+			/* Optional dark overlay for text readability */
+			#title-slide .title-overlay {
+			position: absolute;
+			inset: 0;
+			z-index: 1;
+			background: rgba(0, 0, 0, 0.0);
+			}
+
+			/* Put title text above the images */
+			#title-slide .title-content {
+			position: relative;
+			z-index: 2;
+			}
+		</style>
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/night.css" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+						
+				<section id="title-slide">
+					<div class="title-carousel">
+						<img src="img/example bugs/fluidRobin_2026_03_06__01_18_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="active" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__18_14_06_HDR0_2_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__19_01_21_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__19_34_21_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_02_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" alt="">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_15_06_HDR0_10_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_26_06_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_06__20_43_05_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__20_34_24_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__20_35_07_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__20_44_08_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_02_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_06_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_08_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_20_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_36_09_HDR0_11_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_37_07_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__21_40_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__22_21_10_HDR0_3_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__22_41_06_HDR0_2_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_07__22_43_07_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+						<img src="img/example bugs/fluidRobin_2026_03_08__04_12_25_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg">
+
+					</div>
+
+					<div class="title-overlay"></div>
+
+					<div class="title-content">
+						<h1>&nbsp;</h1>
+						<p>&nbsp;</p>
+						<br><br><br><br><br><br><br><br><br><br>
+					</div>
+				</section>
+
+				<section>
+				  <h3>Proyecto Manu Mothbox</h3>
+				  <img class="stretch" src="img/mothbox-dark.jpg" alt="Manu Mothbox">
+				</section>
+
+				<section>
+				  <h2>Esta presentación</h2>
+
+<ol>
+
+<li>¿Qué es una Mothbox?</li>
+
+<li>Imágenes de la semana pasada</li>
+
+<li>Potenciales y limitaciones</li>
+
+<li>¿Preguntas de investigación?</li>
+
+<li>Proyecto de caja de polillas en Manu</li>
+
+</ol>
+				</section>
+				
+				<section>
+					<h2>¿Qué es una Mothbox?</h2>
+					<ol>
+						<li>Ilumina una sábana con luz: ultravioleta y visible.</li>
+						<li>Toma una foto cada 60 segundos.</li>
+						<li>Utilizamos inteligencia artificial para identificar insectos en las fotos.</li>
+						<li>Normalmente, es necesario cambiar la batería y la tarjeta de memoria cada noche (ya que la luz consume mucha energía).</li>
+					</ol>
+				</section>
+
+				<section>
+					<img src="img/mothbox-cacao.jpg" class="stretch">
+				</section>
+
+				<section>
+					<section>
+						<!-- <h4>Example mothbox photo</h4> -->
+						<small>Área de Restauración camera A; 2026-03-06; 7:26PM</small>
+						<img src="img/example-mb-image-restorationarea.jpg" class="stretch">
+					</section>
+					<section>
+						<small>Área de Restauración camera A; 2026-03-06; 7:43PM</small>
+						<img src="img/example-raw-images/agileCigua_2026_03_06__19_43_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Área de Restauración camera A; 2026-03-06; 8:05PM</small>
+						<img src="img/example-raw-images/agileCigua_2026_03_06__20_05_05_HDR0.jpg">
+					</section>
+					<section>
+						<small>Área de Restauración camera A; 2026-03-06; 8:41PM</small>
+						<img src="img/example-raw-images/agileCigua_2026_03_06__20_41_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Área de Restauración camera B; 2026-03-06; 11:05PM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_06__23_05_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Trocha 7 leafcutter ant nest; 2026-03-05; 10:07PM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_05__22_07_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Trocha 7 leafcutter ant nest; 2026-03-06; 3:41AM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_06__03_41_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Cacao arboretum; 2026-03-07; 9:24PM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_07__21_24_08_HDR0.jpg">
+					</section>
+				</section>
+
+
+				<section>
+					<h4>Software de Procesamiento de IA</h4>
+					<img src="img/mothbot-screenshot.png" class="stretch">
+				</section>
+
+				<section>
+					<h4>Software de Procesamiento de IA</h4>
+					<ol>
+
+<li>Recorta insectos de la foto</li>
+
+<li>Identifica insectos, actualmente solo hasta el nivel de orden</li>
+
+<li>En el futuro, será más preciso y logrará una clasificación más fina</li>
+
+<li>Actualmente no es muy fácil de usar, pero está mejorando</li>
+
+</ol>
+				</section>
+
+				<section>
+					<section>
+						<h3>AI Recortando</h3>
+						<img src="img/example-mb-image-restorationarea.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_2_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_3_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_4_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_5_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_7_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_8_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_9_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_10_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_11_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_12_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_13_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_14_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_15_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_16_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_17_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_18_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_19_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_20_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_21_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_22_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_23_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_24_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_25_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_26_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_27_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+				</section>
+				
+				<section>
+					Aplicación de edición de clasificación
+					<img src="img/mothbox-classify-app.png" class="stretch">
+				</section>
+
+				<section>
+					
+					<h4>Pruebas de la semana pasada:</h4>
+
+					<!-- <ol>
+
+					<li>Senderos 4 y 7, cerca del campo de fútbol</li>
+
+					<li>Sendero 8, cuesta arriba</li>
+
+					<li>Área de restauración</li>
+
+					<li>Arboreto de cacao</li>
+
+					</ol><br> -->
+					<img src="img/test-deployment-sites.png" class="stretch">
+
+					<br>24519 detecciones de insectos<br>
+
+					<small>(Aún no hemos analizado los datos)</small>
+				</section>
+
+				<section style="font-size:80%">
+					<ul style="list-style-type: none;">
+
+<li><b><span style="font-size:120%">Limitaciones</span></b>
+
+<ol>
+
+<li>Funciona mejor con insectos grandes</li>
+
+<li>Actualmente hoy, la IA solo llega al nivel de orden, pero está mejorando</li>
+
+<li>En algunos casos, nunca llegará al nivel de especie</li>
+
+<li>No puede contar individuos ni abundancia con precisión</li>
+
+<li>¿Muestreo sesgado?</li>
+
+</ol>
+
+</li>
+
+<li style="margin-top:1em"><b><span style="font-size:120%">Potenciales</span></b>
+
+<ol>
+<li>Los modelos de identificación de IA mejorarán en 3-5 años</li>
+
+<li>Recopila grandes volúmenes de datos de presencia</li>
+
+<li>Datos longitudinales: ¿cambios a lo largo del tiempo?</li>
+
+<li>¿Medidas indirectas de biodiversidad?</li> <li>¿Datos de comportamiento?</li> 
+</ol> 
+</li> 
+</ul>
+				</section>
+				
+				<section>
+
+					<h4>Discusión</h4>
+
+<ol>
+
+<li>¿Para qué tipos de preguntas de investigación podría ser útil?</li>
+
+<li>¿Cómo podrías utilizar esto en tu propio trabajo?</li>
+
+</ol>
+<br><br><br>
+					<h4>Discussion</h4>
+					<ol>
+						<li>What types of research questions might this be useful for?</li>
+						<li>How might you want to use this in your own work?</li>
+					</ol>
+				</section>
+
+				
+
+				
+<section>
+
+<h3>Proyecto Mothbox en Manu</h3>
+
+<br>
+
+<ol>
+<li><b>Primera parte:</b> la semana que viene<br> ¡Dos cajas Mothbox conectadas en red y con alimentación eléctrica!</li>
+
+<li><b>Segunda parte:</b> ¿Más adelante?<br> ¿10 cajas Mothbox? ¿Una red más grande?</li>
+
+</ol>
+
+</section>
+
+<section>
+
+<h4>La próxima semana: Proyecto piloto en la zona de restauración</h4>
+
+<img class="stretch" src="img/deployment-map.png">
+
+<ul>
+
+<li>Dos ubicaciones en la zona de restauración</li>
+
+<li>Seguimiento de la diversidad de insectos a lo largo del tiempo</li>
+
+</ul>
+
+</section>
+
+<section style="font-size:70%">
+
+<h3>La próxima semana: Implementación en red</h3>
+
+<img src="img/deployment-diagram.jpg" class="stretch">
+
+<ul>
+
+<li>Dos cajas para polillas: alimentadas con energía solar, conectadas a la red mediante fibra óptica</li>
+
+<li>Configúralas y olvídate: esperamos que requieran un mantenimiento mínimo y recopilen datos cada noche</li>
+
+<li>Pruebas: ¿qué fallará? ¿Es fácil de mantener/reparar?</li>
+
+<li>La IA para la identificación de especies mejorará en el futuro, así que ahora recopilaremos datos y los analizaremos más tarde</li>
+
+<li>(¡Pero nos encantaría recibir ayuda para determinar qué análisis realizar!)</li>
+
+</ul>
+
+</section>
+
+
+				
+
+				<section>
+					<img class="stretch" src="img/cusco-supplies.jpg" alt="Mothbox deployment in restoration area">
+				</section>
+
+				<section style="font-size:80%">
+
+<h3>Futuro: ¿Más cajas para polillas e infraestructura?</h3>
+
+<ul>
+
+<li>Estamos solicitando subvenciones para realizar una versión de monitoreo más amplia de este proyecto.</li>
+
+<li>Podremos monitorear insectos a lo largo del tiempo, en diferentes partes de la estación de campo.</li>
+
+<li>La red y la infraestructura requerirán una gran inversión para llevar fibra óptica y energía a toda la reserva. Una vez construida, también podremos usarla para otros sensores.</li>
+
+<li>Necesitamos desarrollar nuevos métodos para analizar y utilizar estos datos, ya que la tecnología es muy reciente.</li>
+
+</ul>
+
+</section>
+
+				<section>
+
+<h4>Discusión</h4>
+
+<ol>
+
+<li>¿Cómo deberíamos diseñar nuestro muestreo?
+
+<br><small>(Problema: ¡demasiados datos si no tenemos cuidado!)</small>
+
+</li>
+
+<li>¿Qué más podríamos hacer con esta infraestructura de fibra óptica y energía?</li>
+
+</ol><br><br><br>
+<h4>Discussion</h4>
+					<ol>
+						<li>How should we design our sampling?
+							<br><small>(Problem: too much data, if we are not careful!)</small>
+
+						</li>
+						<li>What else could we do with this fiber optic and power infrastructure?</li>
+					</ol>
+</section>
+
+				<section data-background-image="img/example-raw-images/fluidRobin_2026_03_07__21_24_08_HDR0.jpg">
+					<h2 style="color:black">¡Muchas gracias!</h2>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
+		<script>
+
+			let titleCarouselInterval = null;
+
+			function startTitleCarousel() {
+				const slide = document.querySelector('#title-slide');
+				if (!slide) return;
+
+				const images = slide.querySelectorAll('.title-carousel img');
+				if (images.length <= 1) return;
+				if (titleCarouselInterval) return;
+
+				let current = 0;
+
+				titleCarouselInterval = setInterval(() => {
+				images[current].classList.remove('active');
+				current = (current + 1) % images.length;
+				images[current].classList.add('active');
+				}, 5000);
+			}
+
+			function stopTitleCarousel() {
+				if (titleCarouselInterval) {
+				clearInterval(titleCarouselInterval);
+				titleCarouselInterval = null;
+				}
+			}
+
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			}).then(() => {
+				const titleSlide = document.querySelector('#title-slide');
+
+				function syncCarouselWithCurrentSlide() {
+				const currentSlide = Reveal.getCurrentSlide();
+
+				if (currentSlide === titleSlide) {
+					startTitleCarousel();
+				} else {
+					stopTitleCarousel();
+				}
+				}
+
+				syncCarouselWithCurrentSlide();
+				Reveal.on('slidechanged', syncCarouselWithCurrentSlide);
+			});
+		</script>
+	</body>
+</html>
