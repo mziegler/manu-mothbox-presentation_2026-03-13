@@ -7,11 +7,11 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 
-		<title>reveal.js</title>
+		<title>Manu Mothbox Project Slides</title>
 
 		<link rel="stylesheet" href="dist/reset.css" />
 		<link rel="stylesheet" href="dist/reveal.css" />
-		<link rel="stylesheet" href="dist/theme/black.css" />
+		<link rel="stylesheet" href="dist/theme/night.css" />
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
@@ -19,8 +19,288 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+				  <h3>Manu Mothbox Project</h3>
+				  <img class="stretch" src="img/mothbox-dark.jpg" alt="Manu Mothbox">
+				</section>
+				
+				<section>
+				  <h2>This Presentation</h2>
+				  <ol>
+					<li>What is a Mothbox?</li>
+					<li>Images from last week</li>
+					<li>Potentials and limitations</li>
+					<li>Discuss research questions?</li>
+					<li>Mothbox project at Manu</li>
+				  </ol>
+				</section>
+				
+				<section>
+					<h2>What is a Mothbox?</h2>
+					<ol>
+						<li>Shines lights on a sheet: UV and visible</li>
+						<li>Takes a photo every 60 seconds</li>
+						<li>We use AI to identify insects in the photos</li>
+						<li>Normally, you need to change the battery and memory card each night (because the light uses a lot of power)</li>
+					</ol>
+				</section>
+
+				<section>
+					<img src="img/mothbox-cacao.jpg" class="stretch">
+				</section>
+
+				<section>
+					<section>
+						<!-- <h4>Example mothbox photo</h4> -->
+						<small>Restoration area camera A; 2026-03-06; 7:26PM</small>
+						<img src="img/example-mb-image-restorationarea.jpg" class="stretch">
+					</section>
+					<section>
+						<small>Restoration area camera A; 2026-03-06; 7:43PM</small>
+						<img src="img/example-raw-images/agileCigua_2026_03_06__19_43_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Restoration area camera A; 2026-03-06; 8:05PM</small>
+						<img src="img/example-raw-images/agileCigua_2026_03_06__20_05_05_HDR0.jpg">
+					</section>
+					<section>
+						<small>Restoration area camera A; 2026-03-06; 8:41PM</small>
+						<img src="img/example-raw-images/agileCigua_2026_03_06__20_41_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Restoration area camera B; 2026-03-06; 11:05PM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_06__23_05_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Trail 7 leafcutter ant nest; 2026-03-05; 10:07PM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_05__22_07_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Trail 7 leafcutter ant nest; 2026-03-06; 3:41AM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_06__03_41_06_HDR0.jpg">
+					</section>
+					<section>
+						<small>Cacao arboretum; 2026-03-07; 9:24PM</small>
+						<img src="img/example-raw-images/fluidRobin_2026_03_07__21_24_08_HDR0.jpg">
+					</section>
+				</section>
+
+
+				<section>
+					<h4>AI Processing software</h4>
+					<img src="img/mothbot-screenshot.png" class="stretch">
+				</section>
+
+				<section>
+					<h4>AI Processing software</h4>
+					<ol>
+						<li>Clips insects from the photo</li>
+						<li>Identifies insects, currently only to order level</li>
+						<li>In the future, it will become more accurate and achieve finer classification</li>
+						<li>Currently not very user-friendly, but it is improving</li>
+					</ol>
+				</section>
+
+				<section>
+					<section>
+						<h3>AI Clipping</h3>
+						<img src="img/example-mb-image-restorationarea.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_0_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_1_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_2_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_3_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_4_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_5_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_6_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_7_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_8_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_9_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_10_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_11_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_12_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_13_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_14_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_15_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_16_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_17_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_18_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_19_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_20_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_21_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_22_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_23_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_24_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_25_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_26_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+					<section>
+						<img src="img/example-patches-restorationarea/agileCigua_2026_03_06__19_26_06_HDR0_27_Mothbot_yolo11m_4500_imgsz1600_b1_2024-01-18.pt.jpg" class="stretch">
+					</section>
+				</section>
+				
+				<section>
+					Classification editor app
+					<img src="img/mothbox-classify-app.png" class="stretch">
+				</section>
+
+				<section>
+					<h4>Last week testing:</h4>
+					<!-- <ol>
+						<li>Trails 4+7, close to football field</li>
+						<li>Trail 8, up the hill</li>
+						<li>Restoration area</li>
+						<li>Cacao arboretum</li>
+					</ol><br> -->
+					<img src="img/test-deployment-sites.png" class="stretch">
+					<br>24519 Insect detections<br>
+					<small>(We have not yet analyzed the data)</small>
+				</section>
+
+				<section style="font-size:80%">
+					<ul style="list-style-type: none;">
+						<li><b><span style="font-size:120%">Limitations</span></b>
+							<ol>
+								<li>Works better for large insects</li>
+								<li>AI currently only goes to order level, but is improving</li>
+								<li>In some cases, it will never get to species level</li>
+								<li>It cannot count individuals or abundance well</li>
+								<li>Biased sampling?</li>
+							</ol>
+						</li>
+						<li style="margin-top:1em"><b><span style="font-size:120%">Potentials</span></b>
+							<ol>
+								<li>AI identification models will improve in 3-5 years</li>
+								<li>Collects large volumes of presence data</li>
+								<li>Longitudinal data - changes over time?</li>
+								<li>Proxy measures of biodiversity?</li>
+								<li>Behavioral data?</li>
+							</ol>
+						</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h4>Discussion</h4>
+					<ol>
+						<li>What types of research questions might this be useful for?</li>
+						<li>How might you want to use this in your own work?</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Mothbox project at Manu</h3>
+					<br>
+					<ol>
+						<li><b>Part one:</b> next week<br> two mothboxes networked+powered!</li>
+						<li><b>Part two:</b> sometime later?<br> 10 mothboxes? Bigger network?</li>
+					</ol>
+				</section>
+
+				<section style="font-size:70%">
+					<h3>Next week: Networked deployment</h3>
+					<img src="img/deployment-diagram.jpg" class="stretch">
+					<ul>
+						<li>Two mothboxes: powered with solar, connected to network with fiber optic</li>
+						<li>Set it up and forget it: hopefully they will require minimal maintainance, and collect data every night</li>
+						<li>Testing: what will break? Is it easy to maintain/fix?</li>
+						<li>AI for species identification will improve in the future, so we will just collect data now and analyze later</li>
+						<li>(But we would love help figuring out what analysis to do!)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Pilot deployment: Restoration area</h3>
+					INSERT MAP
+					<ul>
+						<li>Two locations in the restoration area</li>
+						<li>Tracking insect diversity over time</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<img class="stretch" src="img/cusco-supplies.jpg" alt="Mothbox deployment in restoration area">
+				</section>
+
+				<section style="font-size:80%">
+					<h3>Future: More Mothboxes and Infrastructure?</h3>
+					<ul>
+						<li>We are applying for grants to do a bigger monitoring version of this project</li>
+						<li>We can monitor insects over time, around different parts of the field station</li>
+						<li>The network and infrastructure will be a big investment, to get fiber and power around the whole conservancy. Once we build it, we can also use it for other sensors</li>
+						<li>We need to develop new methods to analyze and use this data, because the technology is so new.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>Discussion</h4>
+					<ol>
+						<li>How should we design our sampling?
+							<br><small>(Problem: too much data, if we are not careful!)</small>
+
+						</li>
+						<li>What else could we do with this fiber optic and power infrastructure?</li>
+					</ol>
+				</section>
+
+				<section data-background-image="img/example-raw-images/fluidRobin_2026_03_07__21_24_08_HDR0.jpg">
+					<h2 style="color:black">Thank you!</h2>
+
+				</section>
 			</div>
 		</div>
 
